@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 20%;
+}
+

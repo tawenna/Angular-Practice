@@ -1,0 +1,8 @@
+<div>
+  <app-pokemon
+  *ngFor="let pokemon of starterPokemons"
+  [pokemonname]="pokemon"
+  (click)= 'selectpoke()'
+  ></app-pokemon>
+</div>
+
