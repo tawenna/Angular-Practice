@@ -1,8 +1,14 @@
-<div>
+<div class="cardcontainer">
+
   <app-pokemon
   *ngFor="let pokemon of starterPokemons"
   [pokemonname]="pokemon"
-  (click)= 'selectpoke()'
+  (click)= 'selectpoke(pokemon)'
+  ></app-pokemon>
+  <app-pokemon
+  *ngIf="showselected"
+  [pokemonname]="selectedPoke"
   ></app-pokemon>
 </div>
+
 

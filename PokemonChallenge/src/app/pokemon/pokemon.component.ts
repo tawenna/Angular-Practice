@@ -18,8 +18,7 @@ export class PokemonComponent implements OnInit, OnDestroy {
     this.subPoke$ = this.pokemonservice.getPokemon(this.pokemonname).subscribe((
       data:PokemonResponse) => {this.pokedetails = data;}
     );
-      this.pokepic = this.pokedetails.sprites.other.dream_world;
-    console.log(this.pokepic);
+
   }
   ngOnDestroy(): void {
     this.subPoke$.unsubscribe();
